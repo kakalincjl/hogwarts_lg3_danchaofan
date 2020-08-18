@@ -124,23 +124,23 @@ class XuZhu(TongLao):
         return self.read()
 
 
-xz = XuZhu(50, 100)
-# xz.see_people('ss')
-# xz.fight_zms()
-# xz.read()
+if __name__ == '__main__':
+    # 简单调试下
 
+    xz = XuZhu(50, 100)
+    # xz.see_people('ss')
+    # xz.fight_zms()
+    # xz.read()
 
-tl = TongLao(10, 120)
-# tl.see_people('WYZ')
-tl.fight_zms(xz)
+    tl = TongLao(10, 120)
+    # tl.see_people('WYZ')
+    tl.fight_zms(xz)
 
-print(tl.hp)
-print(xz.hp)
-if tl > xz:
-    print("童姥赢")
-elif xz > tl:
-    print("虚竹赢")
-else:
-    print("打成平手")
-
-
+    # print(tl.hp)
+    # print(xz.hp)
+    if tl > xz:
+        print("童姥赢")
+    elif xz > tl:
+        print("虚竹赢")
+    else:
+        print("打成平手")
